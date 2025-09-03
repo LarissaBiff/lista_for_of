@@ -8,15 +8,19 @@
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
-
     //PROCESSAMENTO
+    let fem = [];
+    let mas = [];
 for (let g of listaDeNomes) {
-    let  genero = prompt("Informe se é um nome masculino(M) feminino(F):");
-    if (genero == "M") {
-        
+    let  genero = prompt(`Informe se é o nome "${g}" é masculino(M) feminino(F):`).trim().toUpperCase();
+    if (genero == "F") {
+        fem.push(g);
+    } else {
+        mas.push(g);
     }
 }
     
     //SAÍDA
-
+alert(mas.join(", "));
+alert(fem.join(", "));
 </script>
