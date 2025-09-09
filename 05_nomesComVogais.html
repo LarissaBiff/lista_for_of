@@ -6,9 +6,23 @@
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
 
     //ENTRADA
-
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let item = [];
+    let letra;
     //PROCESSAMENTO
-
+    for(let v of listaDeNomes) {
+        letra = v.charAt().toLocaleLowerCase(); 
+        switch(letra) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                item.push(v)
+            break
+        }
+            item.sort()
+    }
     //SAÍDA
-
+    alert(item.join())
 </script>

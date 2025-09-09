@@ -11,9 +11,14 @@ let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10
     //PROCESSAMENTO
 let numeros = [];
 for(let n of listaDeItens) {
-    
+        if(n % 2 === 0) {
+         numeros.push(n);
+    }
 }
 
+alert(numeros.join(", "));
+alert(numeros.length);
+alert(listaDeItens.length);
     //SAÍDA
 
 </script>
